@@ -740,7 +740,7 @@ header.masthead h1 {
 }
 
 /* Pseudo elements for icons */
-.btn:before,
+.btn:before
 {
 	speak: none;
 	font-style: normal;
@@ -814,4 +814,26 @@ header.masthead h1 {
 
 .btn-5a:hover:before {
 	top: 0;
+}
+
+/*Carousel*/
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption {
+  z-index:10;
+  color:#fff;
+  text-align:center;
+  top:50%;
+  bottom:auto;
+  -webkit-transform:translate(0, -50%);
+  -ms-transform:translate(0, -50%);
+  transform:translate(0, -50%);
 }
