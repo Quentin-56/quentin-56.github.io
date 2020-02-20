@@ -801,6 +801,18 @@ hr.light {
   -webkit-transform:translate(0, -50%);
   -ms-transform:translate(0, -50%);
   transform:translate(0, -50%);
+
+}
+
+.carousel-caption-2 {
+  z-index:10;
+  color:#fff;
+  text-align:left;
+  top:50%;
+  bottom:auto;
+  -webkit-transform:translate(0, -50%);
+  -ms-transform:translate(0, -50%);
+  transform:translate(0, -50%);
 }
 
 .bottom-caption{
@@ -817,6 +829,12 @@ hr.light {
     font-family: "Segoe UI","Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight:200!important;
     font-size:4rem;
+  }
+
+  .stitle-caption {
+    font-family: "Segoe UI","Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight:100!important;
+    font-size:3rem;
   }
 
   .image-replacement{
@@ -836,7 +854,26 @@ hr.light {
     font-size:2.5rem;
   }
 
+  .stitle-caption {
+    font-family: "Segoe UI","Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight:100!important;
+    font-size:2.5rem;
+  }
+
   .image-replacement{
     width:60px;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .carousel-caption-2 {
+    z-index:10;
+    color:#fff;
+    text-align:left;
+    top:75%;
+    bottom:auto;
+    -webkit-transform:translate(0, -50%);
+    -ms-transform:translate(0, -50%);
+    transform:translate(0, -50%);
   }
 }
