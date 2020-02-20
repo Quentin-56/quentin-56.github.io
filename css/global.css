@@ -368,9 +368,10 @@
 .navbar-dark .navbar-text a:focus,.navbar-dark .navbar-text a:hover {
   color: #fff;
 }
-
+/*l*/
 .bg-primary {
-  background-color: rgb(46, 104, 163)!important;
+  background: linear-gradient(#76bfec, #525863)!important;
+
 }
 
 a.bg-primary:focus,a.bg-primary:hover,button.bg-primary:focus,button.bg-primary:hover {
@@ -564,9 +565,9 @@ hr.light {
 }
 
 #cv{
-	background: url("../icons/branch-left.svg"), url("../icons/branch-right.svg");
-	background-repeat: no-repeat, no-repeat;
-	background-position: left, right;
+  background-image: url("../icons/branch-left.svg"), url("../icons/branch-right.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
 
 
 }
