@@ -571,43 +571,7 @@ hr.light {
 
 }
 
-header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 72px);
-  background: linear-gradient(to bottom,rgba(53, 100, 112,.4) 0,rgba(53, 100, 112,.4) 100%),url(https://www.marmille.fr/wp-content/uploads/2016/05/fondecran-tropical-iphone4.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
 
-}
-
-header.masthead h1 {
-  font-size: 2.25rem;
-}
-
-@media (min-width:992px) {
-  header.masthead {
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: 72px;
-    padding-bottom: 0;
-  }
-
-  header.masthead p {
-    font-size: 1.15rem;
-  }
-
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width:1200px) {
-  header.masthead h1 {
-    font-size: 3.5rem;
-  }
-}
 
 
 /*Effet du hamburger btn*/
@@ -827,7 +791,7 @@ header.masthead h1 {
   background-size: cover;
 }
 
-.carousel-caption {
+.carousel-caption-1 {
   z-index:10;
   color:#fff;
   text-align:center;
@@ -839,7 +803,12 @@ header.masthead h1 {
 }
 
 .bottom-caption{
-  bottom:
+  text-align:center;
+  -webkit-transform:translate(0, -50%);
+  -ms-transform:translate(0, -50%);
+  transform:translate(0, -50%);
+  top:80%;
+  bottom:auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -847,7 +816,12 @@ header.masthead h1 {
     font-family: "Segoe UI","Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight:200!important;
     font-size:4rem;
+  }
 
+
+
+  .image-replacement{
+    width:75px;
   }
 }
 
@@ -856,6 +830,9 @@ header.masthead h1 {
     font-family: "Segoe UI","Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight:100!important;
     font-size:2.5rem;
+  }
 
+  .image-replacement{
+    width:50px;
   }
 }

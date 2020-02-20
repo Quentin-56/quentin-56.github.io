@@ -21,9 +21,12 @@
   </head>
 
   <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-0" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" id="test" href="#page-top">Quentin Levieux</a>
+
+        <a class="navbar-brand align-content js-scroll-trigger brand-choice" id="test" href="#page-top">
+          <img class="img-fluid image-replacement" src="./icons/image.png" alt="logo QL">
+        </a>
 
         <!--Button appear when collapse -->
         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,15 +59,19 @@
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active " style="background-image: url('./resources/bretagne.jpg')">
-            <div class="carousel-caption">
+            <div class="carousel-caption carousel-caption-1">
               <h1 class="title-caption">Bienvenue sur mon site</h1>
               <hr class="divider my-4">
             </div>
+            <div class="carousel-caption">
+              <p class="lead">Vous êtes le <span id="counter">0</span> ème visiteur !</p>
+            </div>
+
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item " style="background-image: url('./resources/programming.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">Second Slide</h2>
+            <div class="carousel-caption">
+              <h2 class="title-caption"></h2>
               <p class="lead">This is a description for the second slide.</p>
             </div>
           </div>
