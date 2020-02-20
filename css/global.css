@@ -818,13 +818,16 @@ hr.light {
     font-size:4rem;
   }
 
-
-
   .image-replacement{
     width:75px;
   }
+
+  .lead{
+    font-size: 2rem;
+  }
 }
 
+/*ECRAN INFERIEUR A 768px*/
 @media screen and (max-width: 768px) {
   .title-caption {
     font-family: "Segoe UI","Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -833,6 +836,6 @@ hr.light {
   }
 
   .image-replacement{
-    width:50px;
+    width:60px;
   }
 }
