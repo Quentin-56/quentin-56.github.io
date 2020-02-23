@@ -1,6 +1,12 @@
 /*!
  * CSS GLOBAL POUR TOUT LE FICHIER .HTML
  */
+
+display-h2{
+  font-size: 2rem;
+  font-weight:100;
+}
+
 .btn-primary {
   background-color: rgb(46, 104, 163);
 }
@@ -650,16 +656,17 @@ hr.light {
 	 margin: 10px 0;
 	 padding: 10px 10px 0;
 }
+
  .tablist .tab {
 	 border-bottom: 1px solid transparent;
 	 color: white;
 	 cursor: pointer;
 	 display: inline-block;
 	 font-size: 1.4em;
-	 font-weight: 100;
+	 font-weight: 400;
 	 padding: 10px 15px;
 	 transition: 200ms all linear;
-	 font-family: 'Poiret One',cursive ,"Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial
+
 }
  .tablist .tab:hover {
 	 border-bottom: 4px solid rgb(46, 104, 163);
@@ -683,9 +690,6 @@ hr.light {
 
 /* General button style (reset) */
 .btn {
-	
-	
-	
 	display: inline-block;
 	text-transform: uppercase;
 	outline: none;
