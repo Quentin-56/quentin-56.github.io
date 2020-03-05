@@ -945,7 +945,6 @@ hr.light {
   border-right: 0;
   -webkit-transform-origin: center right;
   transform-origin: center right;
-  animation: loading-1 1.8s linear forwards;
 }
 .progress .progress-value{
   width: 90%;
@@ -960,23 +959,9 @@ hr.light {
   top: 5%;
   left: 5%;
 }
-.progress-100 .progress-left .progress-bar{
-  animation: loading-1 1.8s linear forwards 1.8s;
-}
-.progress-90 .progress-left .progress-bar{
-  animation: loading-90 1.5s linear forwards 1.8s;
-}
-.progress-85 .progress-left .progress-bar{
-  animation: loading-85 1.2s linear forwards 1.8s;
-}
-.progress-75 .progress-left .progress-bar{
-  animation: loading-75 1.0s linear forwards 1.8s;
-}
-.progress-60 .progress-left .progress-bar{
-  animation: loading-60 0.4s linear forwards 1.8s;
-}
+
 .progress .progress-bar{
-  border-color: #ffb500;
+  border-color: #fff;
 }
 @keyframes loading-1{
   0%{
@@ -1029,4 +1014,60 @@ hr.light {
  }
 @media only screen and (max-width: 990px){
   .progress{ margin-bottom: 20px; }
+}
+
+.progress-right .progress-bar[data-scroll="in"]{
+  border-color: #ffb500;
+  animation: loading-1 1.8s linear forwards;
+}
+.progress-60 .progress-left .progress-bar[data-scroll="in"]{
+  border-color:#ffb500;
+  animation: loading-60 0.4s linear forwards 1.8s;
+}
+.progress-75 .progress-left .progress-bar[data-scroll="in"]{
+  border-color:#ffb500;
+  animation: loading-75 1.0s linear forwards 1.8s;
+}
+.progress-85 .progress-left .progress-bar[data-scroll="in"]{
+  border-color:#ffb500;
+  animation: loading-85 1.2s linear forwards 1.8s;
+}
+.progress-90 .progress-left .progress-bar[data-scroll="in"]{
+  border-color:#ffb500;
+  animation: loading-90 1.5s linear forwards 1.8s;
+}
+.progress-100 .progress-left .progress-bar[data-scroll="in"]{
+  border-color:#ffb500;
+  animation: loading-1 1.8s linear forwards 1.8s;
+}
+@keyframes couleur {
+  from {
+    background-color: orange;
+  }
+  to {
+    background-color: blue;
+  }
+}
+@keyframes imageAppear {
+  0% {
+    transform: translateX(10px);
+  }
+
+  33% {
+    transform: translateX(-20px);
+  }
+
+  66% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0px) rotate(360deg);
+  }
+}
+
+.progress-value img[data-scroll="in"]{
+  animation-name: imageAppear;
+  animation-duration: 3s;
+
 }
