@@ -863,6 +863,10 @@ hr.light {
   .image-replacement{
     width:60px;
   }
+
+  #competences h2{
+    font-size: 3em;
+  }
 }
 
 @media screen and (max-width: 536px) {
@@ -1060,12 +1064,7 @@ hr.light {
   background-color: red;
 
 }
-
-#projets h3{
-
-}
-
-@keyframes blink {
+@keyframes titleAppear {
   from{
     color: transparent;
   }
@@ -1076,6 +1075,6 @@ hr.light {
 }
 
 #projets h3[data-scroll="in"]{
-animation-name: blink;
+  animation-name: titleAppear;
   animation-duration: 3s;
 }
