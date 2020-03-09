@@ -4,7 +4,7 @@ $(function() {
     // Update the tabs
     $('.tab.current').removeClass('current').attr('aria-selected', false);
     $this.addClass('current').attr('aria-selected', true);
-    
+
     // Update the tab panel
     _changeTabPanel($this.attr('aria-controls'));
   });
@@ -25,4 +25,3 @@ const updateCounter = async () =>{
 };
 
 updateCounter();
-
